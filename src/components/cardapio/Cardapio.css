@@ -1,0 +1,43 @@
+.cardapio-lista-header {
+    background-color: #f8f8f8;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Estilo para o nome da empresa */
+  .cardapio-lista-nome-empresa {
+    margin: 0;
+    text-align: left;
+  }
+  
+  /* Estilo para a logo da empresa */
+  .cardapio-lista-logo-empresa {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  /* Estender a cor de fundo para o lado esquerdo completo e o lado direito completo */
+  .cardapio-lista-header::before {
+    content: "";
+    flex-grow: 1;
+    height: 100%;
+    background-color: #f8f8f8;
+  }
+  
+  /* Estilo para os títulos das categorias */
+  .cardapio-lista-header h2 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Espaçamento entre os títulos das categorias */
+  .cardapio-lista-header h2 + h2 {
+    margin-left: 16px;
+  }
+  
