@@ -211,10 +211,20 @@ Menu
 }
 .valor {
   color: var(--clr-gold);
+  font-size: 1.25rem;
+}
+.nome-item-cardapio{
+  font-size: 1.25rem;
 }
 .item-text {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   padding-top: 1rem;
+}
+.titulo-categoria{
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  color: var(--clr-gold);
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

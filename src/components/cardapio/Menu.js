@@ -10,7 +10,7 @@ const Menu = ({ menu, currentCategory }) => {
       {filteredItems?.map(categoria => {
         return (
           <section key={categoria.tituloCategoria} className="menu">
-            <h3>{categoria.tituloCategoria}</h3>
+            <h3 className="titulo-categoria">{categoria.tituloCategoria}</h3>
             <div className="menu-item">
               {categoria.produtos?.map(produto => {
                 const { nome, valor, descricao, urlImagem } = produto;
@@ -19,7 +19,7 @@ const Menu = ({ menu, currentCategory }) => {
                     <img src={urlImagem} alt={nome} className="imagem" />
                     <div className="item-info">
                       <header>
-                        <h4>{nome}</h4>
+                        <h4 className='nome-item-cardapio'>{nome}</h4>
                         <h4 className="valor">R$ {valor.toFixed(2).replace(/\./g, ",")}</h4>
                       </header>
                       <p className="item-text">{descricao}</p>
