@@ -11,7 +11,7 @@ const Menu = ({ menu, currentCategory }) => {
         return (
           <section key={categoria.tituloCategoria} className="menu">
             <h3>{categoria.tituloCategoria}</h3>
-            <div className="menu-items">
+            <div className="menu-item">
               {categoria.produtos?.map(produto => {
                 const { nome, valor, descricao, urlImagem } = produto;
                 return (
