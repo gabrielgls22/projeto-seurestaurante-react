@@ -143,10 +143,11 @@ Menu
 */
 
 .menu {
-  padding: 5rem 0;
+  padding: 0rem 0;
 }
 .title {
   text-align: center;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
 }
 .underline {
@@ -161,6 +162,7 @@ Menu
   margin-bottom: 0rem;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .filter-btn {
   background: transparent;
@@ -195,8 +197,8 @@ Menu
 }
 .imagem {
   object-fit: cover;
-  height: 200px;
-  width: 100%;
+  height: 220px;
+  width: 320px;
   border: 0.25rem solid var(--clr-gold);
   border-radius: var(--radius);
   display: block;
@@ -204,6 +206,7 @@ Menu
 .item-info header {
   display: flex;
   justify-content: space-between;
+  width: 320px;
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
 .item-info h4 {
@@ -211,10 +214,12 @@ Menu
 }
 .valor {
   color: var(--clr-gold);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 .nome-item-cardapio{
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  max-width: 200px;
+  opacity: 0.97;
 }
 .item-text {
   margin-bottom: 2rem;
@@ -225,6 +230,7 @@ Menu
   margin-bottom: 2rem;
   color: var(--clr-gold);
   text-align: center;
+  opacity: 0.67;
 }
 
 @media screen and (min-width: 768px) {
