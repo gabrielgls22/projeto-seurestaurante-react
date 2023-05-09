@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Routes, createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Cardapio from "./components/cardapio/Cardapio";
 import Home from "./components/home/Home";
+import ErroPaginaNaoEncontrada from "./components/erros/ErroPaginaNaoEncontrada";
 
 const router = createBrowserRouter([{
     path: "/",
     element: <App />,
+    errorElement: <ErroPaginaNaoEncontrada />,
     children: [
         {
             path: "/",
