@@ -225,10 +225,10 @@ Menu
 }
 .valor {
   color: var(--clr-gold);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .nome-item-cardapio{
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   max-width: 200px;
   opacity: 0.97;
 }
