@@ -9,6 +9,8 @@ const Categories = ({ categories, onCategoryClick }) => {
   };
 
   return (
+    <div className="categories-container">
+    <div className="categories-scroll">
     <div className="btn-container">
       {categories.map((category, index) => {
         return (
@@ -22,6 +24,8 @@ const Categories = ({ categories, onCategoryClick }) => {
           </button>
         );
       })}
+    </div>
+    </div>
     </div>
   );
 };
