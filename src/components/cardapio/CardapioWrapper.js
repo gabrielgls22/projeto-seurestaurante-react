@@ -3,9 +3,7 @@ import axios from "axios";
 let cardapio = {};
 
 export const cardapioWrapper = {
-  async fetchData(location) {
-    const searchParams = new URLSearchParams(location.search);
-    const nomeEmpresa = searchParams.get('nomeEmpresa');
+  async fetchData(nomeEmpresa) {
 
     try {
       const response = await axios.get("http://localhost:8080/cardapio", {
